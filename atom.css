@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #c8c8c8;
+  width: 950px;
+  margin: auto;
+}
+
+header nav {
+  box-sizing: border-box;
+  display: flex;
+}
+
+header nav ul {
+  list-style: none;
+  display: inline-block;
+}
+
+header nav ul li {
+  display: inline-flex;
+  margin: 5px 10px;
+  text-decoration: none;
+}
+
+header nav ul li a {
+  font-family: roboto;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  transition: 0.4s;
+  background: #84807a;
+  border-radius: 5px;
+  outline: none;
+}
+
+header nav ul li a:hover {
+  cursor: pointer;
+  background: black;
+  transform: all 1s;
+}
+
+body {
+  background-color: black;
+  color: #ff0b0b;
+}
+
+.para {
+  font-size: 15px;
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  color: white;
+}
+
+main {
+  width: 950px;
+  margin: auto;
+  background: #221f20;
+}
+
+main section h1 {
+  font-size: 18px;
+  font-family: roboto;
+  text-align: center;
+  font-weight: bold;
+  color: #d1ccc3;
+  line-height: 50px;
+}
+
+footer {
+  width: 950px;
+  margin: auto;
+  background: black;
+}
+
+footer .footer-content {
+  font-size: 20px;
+  font-family: roboto;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  line-height: 50px;
+  background: #555553;
+  border: none;
+  border-radius: 5px;
+}
+
+.about .content .title {
+  font-size: 16px;
+  font-family: roboto;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  line-height: 50px;
+  background: #555553;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.about .content .title h1 {
+  font-size: 20px;
+  font-family: roboto;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  line-height: 50px;
+  background: #555553;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn, .btn-download, .btn-learn-more {
+  border: none;
+  font-family: arial black;
+  outline: none;
+  text-align: center;
+  padding: 11px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: white;
+  border-radius: 5px;
+  transition: all 1s;
+}
+
+.btn:hover, .btn-download:hover, .btn-learn-more:hover {
+  color: black;
+  background-color: #01d3fd;
+}
+
+.btn-download {
+  background: green;
+}
+
+.btn-learn-more {
+  background: #ba95a8;
+}
+
+.col-4 {
+  float: left;
+}
+
+.row {
+  clear: both;
+  content: '';
+  display: flex;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+
+.blue-text {
+  color: blue;
+}
+
+.yellow-text {
+  color: yellow;
+}
+
+.orange-text {
+  color: orange;
+}
+
+.pink-text {
+  color: pink;
+}
+
+.purple-text {
+  color: purple;
+}
+
+.tomato-text {
+  color: tomato;
+}
+
+.darkgreen-text {
+  color: darkgreen;
+}
+/*# sourceMappingURL=atom.css.map */

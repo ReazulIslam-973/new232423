@@ -1,0 +1,199 @@
+
+@import "reset";
+@import "variables";
+@import "nestedcss" ;
+@import "body";
+
+
+@mixin  setfont-size($value) {
+  @if( $value == small){
+    font-size:15px;
+    color:black;
+     background-color: white;
+
+  }
+
+  @else if($value == medium){
+    font-size:18px;
+    color:white;
+    background:black;
+
+  }
+  @else if ($value == large ){
+    font-size: 22px;
+    font-family: arial black;
+    color:white;
+    background: red;
+  }
+
+  @else{
+    font-size:0px;
+  }
+  
+}
+
+
+.para{
+  @include setfont-size(small);
+}
+
+
+
+
+
+
+
+
+h1{
+  color:white;
+}
+
+  @mixin title{
+    font-size:18px;
+    font-family: roboto;
+    text-align: center;
+    font-weight: bold;
+    color:rgb(209, 204, 195);
+    line-height: 50px;
+
+
+
+  }
+
+
+
+
+  @mixin title1($size,$color){
+    font-size:$size;
+    font-family: roboto;
+    text-align: center;
+    font-weight: bold;
+    color:$color;
+    line-height: 50px;
+    background:rgb(85, 85, 83);
+    border:none;
+    border-radius: 5px;
+
+  }
+  main{
+    width:950px;
+    margin:auto;
+    background:rgb(34, 31, 32);
+    section{
+      h1{
+        @include title;
+      }
+    }
+  }
+
+  footer{
+    width:950px;
+    margin:auto;
+    background:rgb(0, 0, 0);
+     .footer-content{
+       @include title1(20px,white);
+      
+        
+     }
+  }
+
+
+  .about{
+    .content{
+      .title{
+        @include title1(16px,rgb(255, 255, 255));
+        margin-bottom: 40px;
+        h1{
+          @include title1(20px,black);
+        }
+      }
+    }
+  }
+
+
+
+  .btn{
+    border:none;
+    font-family: arial black;
+    outline: none;
+    text-align:center;
+    padding: 11px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 5px;
+    transition: all 1s;
+
+  }
+  .btn:hover{
+    color:black;
+    background-color:rgb(1, 211, 253);
+  }
+
+  .btn-download{
+    @extend .btn;
+    background:green;
+  }
+
+  .btn-learn-more{
+    @extend .btn;
+    background:rgb(186, 149, 168);
+  }
+
+
+  .col-4{
+    float:left;
+
+  }
+
+  .row{
+    clear: both;
+    content: '';
+    display: flex;
+
+  }
+
+  $i :1;
+
+  @while  $i <=  12 {
+    .col-#{$i}{
+      width:100% / 12 * $i
+
+    }
+    $i : $i + 1  
+
+    
+  }
+
+//   .col-1 {width: 8.33%;}
+// .col-2 {width: 16.66%;}
+// .col-3 {width: 25%;}
+// .col-4 {width: 33.33%;}
+// .col-5 {width: 41.66%;}
+// .col-6 {width: 50%;}
+// .col-7 {width: 58.33%;}
+// .col-8 {width: 66.66%;}
+// .col-9 {width: 75%;}
+// .col-10 {width: 83.33%;}
+// .col-11 {width: 91.66%;}
+// .col-12 {width: 100%;}
+
+$colours:(
+ color1:red,
+ color2:green,
+ color3:blue,
+ color4:yellow,
+ color5:orange,
+ color6:pink,
+ color7:purple,
+ color8:tomato,
+ color9: darkgreen,
+
+);
+
+@each $key, $color in $colours{
+  .#{$color}-text {
+    color:$color
+  }
+
+}

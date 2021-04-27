@@ -1,0 +1,42 @@
+header{
+    background-color:$header-bgcolor ;
+    width:950px;
+    margin:auto;
+    nav{box-sizing: border-box;
+      display: flex;
+        
+     
+  
+      ul{
+        list-style:none;
+        display: inline-block;
+        li{
+          display:  inline-flex;
+          
+          margin :5px 10px;
+          text-decoration: none;
+          a{
+           
+            font-family: roboto;
+            font-size:20px;
+            text-decoration:none;
+            color:white;
+            font-weight: bold;
+            padding: 10px;
+            transition: 0.4s;
+            background:rgb(132, 128, 122);
+            border-radius: 5px;
+            outline: none;
+            
+  
+          }
+          a:hover{
+            cursor: pointer;
+            background:black;
+            transform:all 1s ;
+          }
+        }
+      }
+  
+    }
+  }
